@@ -23,10 +23,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private ProgressBar      mProgressBar;
     private VideosController mController;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Videos");
+
 
         ListView listView = (ListView) findViewById(R.id.listView);
         mProgressBar = (ProgressBar) findViewById(R.id.progressBar);
